@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- FontAwesome for icons -->
+    <style>
+        .error {
+            border: 2px solid red;
+            background-color: #fff5f5;
+        }
+        .error-message {
+            color: red;
+            font-size: 0.875em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <form class="border p-4 rounded needs-validation" novalidate>
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <div class="input-group">
+                    <input type="text" class="form-control error" placeholder="Enter your name" required>
+                    <span class="input-group-text text-danger"><i class="fas fa-exclamation-circle"></i></span>
+                </div>
+                <div class="error-message">Name is required</div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <div class="input-group">
+                    <input type="email" class="form-control error" placeholder="Enter your email" required>
+                    <span class="input-group-text text-danger"><i class="fas fa-exclamation-circle"></i></span>
+                </div>
+                <div class="error-message">Email is required</div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <div class="input-group">
+                    <input type="password" class="form-control error" placeholder="Enter your password" required>
+                    <span class="input-group-text text-danger"><i class="fas fa-exclamation-circle"></i></span>
+                </div>
+                <div class="error-message">Password is required</div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Hobbies</label>
+                <select class="form-select">
+                    <option selected disabled>Choose a hobby</option>
+                    <option>Reading</option>
+                    <option>Sports</option>
+                    <option>Music</option>
+                    <option>Traveling</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-danger w-100">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
